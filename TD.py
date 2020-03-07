@@ -9,9 +9,13 @@ import unittest
 
 def addition(a,b):
     return a+b
+def substraction(a,b):
+    return a-b
 class UnitTest(unittest.TestCase):
-    def test(self):
-        self.assertEqual(addition(2,3),4) 
+    def test_add(self):
+        self.assertEqual(addition(2,3),4,'incorrect addition result') 
+    def test_subs(self):
+        self.assertEqual(substraction(2,3),-1,"incorrect substraction result") 
 
 
 
